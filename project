@@ -1,0 +1,109 @@
+em desv. 
+
+HTML (index.html) - Esta é a estrutura básica da página inicial:
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DevLinks</h1>
+        <p>Recursos para Desenvolvedores</p>
+    </header>
+
+    <main>
+        <section class="links">
+            <h2>Links Úteis</h2>
+            <ul>
+                <li><a href="https://www.dev.to">Dev.to</a></li>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://stackoverflow.com">Stack Overflow</a></li>
+                <!-- Adicione mais links conforme necessário -->
+            </ul>
+        </section>
+
+        <section class="articles">
+            <h2>Artigos Recentes</h2>
+            <!-- Adicione links para artigos recentes -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 DevLinks. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+CSS (styles.css) - Este arquivo contém o estilo para o layout básico:
+css
+Copy code
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.links, .articles {
+    margin-bottom: 30px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px dashed #333;
+}
+
+.links a:hover {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+JavaScript (scripts.js) - Este arquivo JavaScript poderia ser utilizado para funcionalidades mais avançadas:
